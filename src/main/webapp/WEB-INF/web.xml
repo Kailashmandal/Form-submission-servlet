@@ -1,0 +1,22 @@
+<web-app>
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>com.kailash.mavenproject1.MyHttpServlet1</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <servlet-name>xyz</servlet-name>
+        <servlet-class>com.kailash.mavenproject1.MyHttpServlet2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/MyHttpServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>xyz</servlet-name>
+        <url-pattern>/MyHttpServlet2</url-pattern>
+    </servlet-mapping>
+</web-app>
