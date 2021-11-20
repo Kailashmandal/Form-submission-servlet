@@ -4,6 +4,11 @@
         <servlet-class>com.kailash.mavenproject1.MyHttpServlet1</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>success</servlet-name>
+        <servlet-class>com.kailash.mavenproject1.SuccessServlet</servlet-class>
+    </servlet>
+    
     
     <servlet>
         <servlet-name>xyz</servlet-name>
@@ -16,7 +21,15 @@
     </servlet-mapping>
     
     <servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
         <servlet-name>xyz</servlet-name>
         <url-pattern>/MyHttpServlet2</url-pattern>
     </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 </web-app>
