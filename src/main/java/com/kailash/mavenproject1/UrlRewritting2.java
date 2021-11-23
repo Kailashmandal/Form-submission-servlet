@@ -18,7 +18,8 @@ public class UrlRewritting2 extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter out=res.getWriter();
         String name=req.getParameter("name");
-        out.print("<h4>Hye "+name+", welcome back to my website</h4>");
+        String email=req.getParameter("email");
+        out.print("<h4>Hye "+name+", welcome back to my website."+" <br>your email is :"+email+"</h4>");
         out.close();
     }
     
