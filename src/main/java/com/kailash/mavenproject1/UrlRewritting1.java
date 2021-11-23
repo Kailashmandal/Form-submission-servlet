@@ -18,8 +18,9 @@ public class UrlRewritting1 extends HttpServlet{
         PrintWriter out=res.getWriter();
         
         String n=req.getParameter("user_name");
-        out.print("<h1>Hye welcome"+n+"</h1>");
-        out.print("<a href='UrlRewritting2?name="+n+"'>go to next servlet</a>");
+        String email=req.getParameter("user_email");
+        out.print("<h1>Hye welcome "+n+"</h1>");
+        out.print("<a href='UrlRewritting2?name="+n+"&email="+email+"'>go to next servlet</a>");
         out.close();
     }
     
